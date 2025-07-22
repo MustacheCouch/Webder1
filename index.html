@@ -5,39 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Webder | Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .cta-button {
+      background: #00bcd4;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #0097a7;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Welcome to Webder</h1>
     <p>Crafting High-Performance Websites with Stunning Visuals</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="hero">
-    <h1>Your Vision. Our Code.</h1>
-  </div>
+  <section class="hero">
+    <div>
+      <h1>Your Vision. Our Code.</h1>
+      <a href="contact.html"><button class="cta-button">Let’s Work Together</button></a>
+    </div>
+  </section>
 
   <main class="container">
-    <section>
+    <section id="about">
       <h2>Who We Are</h2>
-      <p><strong>Webder</strong> is a cutting-edge website development company focused on delivering professionally designed, high-performance websites. Whether you're starting from scratch or looking to upgrade, our mission is to build online platforms that are fast, modern, and user-friendly.</p>
+      <p><strong>Webder</strong> is a digital-first website agency that delivers sleek, scalable, and smart websites. From small startups to enterprise solutions, we create tailor-fit web experiences that convert.</p>
     </section>
 
-    <section>
-      <h2>Why Choose Us?</h2>
+    <section id="features">
+      <h2>Why Choose Webder?</h2>
       <ul>
-        <li>✅ Pixel-perfect design and custom branding</li>
-        <li>✅ High-definition images and responsive layouts</li>
-        <li>✅ Well-documented, scalable code</li>
-        <li>✅ Built-in SEO & performance optimization</li>
-        <li>✅ Sell-ready packages for fast deployment</li>
+        <li>✅ Custom, pixel-perfect web design</li>
+        <li>✅ High-definition media integration</li>
+        <li>✅ Optimized for speed and SEO</li>
+        <li>✅ Modern code with future-proof practices</li>
+        <li>✅ Launch-ready sites you can own or resell</li>
       </ul>
     </section>
   </main>
