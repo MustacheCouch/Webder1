@@ -1,139 +1,90 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webder | High-Quality Website Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
 
-/* Header */
-header {
-  background: #1e1e2f;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
+<body style="background-color: #FFFFFF; color: #333333;">
+  <header style="background-color: #1F3A93; color: #FFFFFF; padding: 2rem; text-align: center;">
+    <h1>Webder</h1>
+    <p>Beautiful, high-performing websites made simple.</p>
+  </header>
 
-/* Navigation */
-nav {
-  background: #292940;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-}
+  <nav style="background-color: #4B77BE; display: flex; justify-content: center; gap: 2rem; padding: 1rem;">
+    <a href="#features" style="color: #FFFFFF; text-decoration: none; font-weight: 600;">Features</a>
+    <a href="#reviews" style="color: #FFFFFF; text-decoration: none; font-weight: 600;">Reviews</a>
+    <a href="#pricing" style="color: #FFFFFF; text-decoration: none; font-weight: 600;">Pricing</a>
+    <a href="#contact" style="color: #FFFFFF; text-decoration: none; font-weight: 600;">Contact</a>
+  </nav>
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
+  <section class="hero" style="background: url('https://source.unsplash.com/1600x600/?technology,web') no-repeat center center/cover; padding: 6rem 2rem; color: #FFFFFF; text-align: center;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">Websites That Convert</h1>
+    <p style="font-size: 1.2rem;">We design, build, and sell premium websites for businesses of all sizes.</p>
+    <a href="#contact" class="btn" style="background-color: #4B77BE; padding: 0.75rem 1.5rem; color: white; text-decoration: none; border-radius: 8px; margin-top: 1rem; display: inline-block;">Get Started</a>
+  </section>
 
-nav a:hover {
-  color: #4f46e5;
-}
+  <section class="section" id="features" style="padding: 4rem 2rem; max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Why Choose Webder?</h2>
+    <div class="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div class="feature-card" style="background-color: #F2F2F2; border-radius: 12px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+        <h3>HD Graphics</h3>
+        <p>Modern visuals that grab attention and keep users engaged.</p>
+      </div>
+      <div class="feature-card" style="background-color: #F2F2F2; border-radius: 12px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+        <h3>Professional Content</h3>
+        <p>Well-crafted descriptions that build trust and drive conversions.</p>
+      </div>
+      <div class="feature-card" style="background-color: #F2F2F2; border-radius: 12px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+        <h3>Optimized Code</h3>
+        <p>Fast-loading, mobile-friendly, SEO-ready sites built to perform.</p>
+      </div>
+      <div class="feature-card" style="background-color: #F2F2F2; border-radius: 12px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+        <h3>Secure & Trustworthy</h3>
+        <p>SSL, guarantees, and performance monitoring built in.</p>
+      </div>
+    </div>
+  </section>
 
-/* Hero Section */
-.hero {
-  background: url('https://source.unsplash.com/1600x600/?technology,web') no-repeat center center/cover;
-  padding: 6rem 2rem;
-  color: #fff;
-  text-align: center;
-}
+  <section class="section" id="reviews" style="padding: 4rem 2rem; max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Customer Reviews</h2>
+    <div class="testimonial" style="background-color: #F2F2F2; padding: 1rem; border-left: 4px solid #4B77BE; margin-bottom: 1.5rem;">
+      <p>“Webder built our dream website in just 2 weeks. It looks amazing and runs fast.” – Alex R.</p>
+    </div>
+    <div class="testimonial" style="background-color: #F2F2F2; padding: 1rem; border-left: 4px solid #4B77BE; margin-bottom: 1.5rem;">
+      <p>“We doubled our leads after switching to a Webder site.” – Jamie C.</p>
+    </div>
+  </section>
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+  <section class="section" id="pricing" style="padding: 4rem 2rem; max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Simple Pricing</h2>
+    <p>We offer transparent pricing with no hidden fees.</p>
+    <ul style="list-style-type: disc; margin-left: 2rem;">
+      <li><strong>Starter Site</strong>: $499 – Great for small businesses</li>
+      <li><strong>Pro Site</strong>: $999 – Best for growing companies</li>
+      <li><strong>Enterprise</strong>: Custom quote – Scalable & powerful</li>
+    </ul>
+  </section>
 
-.hero p {
-  font-size: 1.2rem;
-}
+  <section class="section" id="contact" style="padding: 4rem 2rem; max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Contact Us</h2>
+    <p>Ready to level up your web presence?</p>
+    <div class="contact" style="margin-top: 1rem;">
+      <p>Email: <a href="mailto:sales@webder.com" style="color: #1F3A93;">sales@webder.com</a></p>
+      <p>Phone: +1 (800) 123-4567</p>
+    </div>
+  </section>
 
-/* Sections */
-.section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
+  <footer style="background-color: #1F3A93; color: #FFFFFF; padding: 2rem; text-align: center;">
+    <p>&copy; 2025 Webder. All rights reserved.</p>
+    <p>Secured with SSL &bullet; Built for speed &bullet; Mobile ready</p>
+  </footer>
+</body>
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Features */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.feature-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Testimonials */
-.testimonial {
-  background: #fff;
-  padding: 1rem;
-  border-left: 4px solid #4f46e5;
-  margin-bottom: 1.5rem;
-}
-
-/* Pricing */
-ul {
-  list-style-type: disc;
-  margin-left: 2rem;
-}
-
-/* Contact */
-.contact {
-  margin-top: 1rem;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #4f46e5;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #3730a3;
-}
-
-/* Footer */
-footer {
-  background: #1e1e2f;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
+</html>
