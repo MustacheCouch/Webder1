@@ -1,116 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webder - Custom Website Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webder | High-End Website Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.feature-card').forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('visible');
+        }
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Welcome to Webder</h1>
-      <p>Your sleek, scalable, and stunning website solution.</p>
+      <h1>Webder</h1>
+      <p>Custom websites that turn vision into reality</p>
     </div>
   </header>
 
   <nav>
     <div class="container">
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#faq">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <section class="hero">
     <div class="container">
-      <h1>Professional Websites. Built for You.</h1>
-      <p>High-definition design, SEO-ready structure, mobile responsiveness — all included.</p>
-      <a href="#contact" class="btn">Get Started</a>
+      <h1>Make Your Brand Unforgettable</h1>
+      <p>We create high-end, mobile-friendly websites with standout design and speed that converts.</p>
+      <a href="services.html" class="btn">See What We Offer</a>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section class="section alt">
     <div class="container">
-      <h2>What We Offer</h2>
-      <p class="section-intro">Every feature you need in a website, beautifully delivered.</p>
+      <h2>What Sets Us Apart</h2>
+      <p class="section-intro">We blend design, technology, and strategy to build unforgettable digital experiences.</p>
       <div class="features">
         <div class="feature-card">
-          <h3>Custom Design</h3>
-          <p>Every pixel tailored to your brand identity using the latest UI/UX practices.</p>
+          <h3>Pixel-Perfect Design</h3>
+          <p>Crafted interfaces that look and feel premium on every screen.</p>
         </div>
         <div class="feature-card">
-          <h3>Responsive Layout</h3>
-          <p>Flawless performance across devices and screen sizes.</p>
+          <h3>Blazing Speed</h3>
+          <p>We use optimized code and performance tactics to load your site in seconds.</p>
         </div>
         <div class="feature-card">
-          <h3>Optimized Speed</h3>
-          <p>Built to load fast and score high on performance tools.</p>
+          <h3>Advanced SEO</h3>
+          <p>Search engine visibility that drives real traffic and growth.</p>
         </div>
         <div class="feature-card">
-          <h3>Secure and SEO-Ready</h3>
-          <p>Rank higher and stay safe with SSL and structured markup.</p>
+          <h3>Custom Integrations</h3>
+          <p>We build systems that talk to CRMs, APIs, and more.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Mobile First</h3>
+          <p>Designed to perform on phones, tablets, and desktops without compromise.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Trust Signals</h3>
+          <p>Security badges, SSL, testimonials, and proven partner logos.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="pricing" class="section alt">
+  <section class="section">
     <div class="container">
-      <h2>Plans & Pricing</h2>
-      <p class="section-intro">Transparent pricing for all business sizes.</p>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Starter</h3>
-          <p class="price">$499</p>
-          <p>1-page site, mobile-ready, SSL setup</p>
-        </div>
-        <div class="pricing-card popular">
-          <h3>Professional</h3>
-          <p class="price">$1,199</p>
-          <p>Multi-page site, advanced SEO, custom visuals</p>
-        </div>
-        <div class="pricing-card">
-          <h3>Enterprise</h3>
-          <p class="price">Custom</p>
-          <p>API integration, user systems, backend support</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2>Client Testimonials</h2>
+      <h2>What Our Clients Say</h2>
       <div class="testimonial">
-        "Webder created a flawless site for our launch. Smooth experience, great ROI."
-        <br />— Jordan, TechStartup Inc.
+        “Our site is sleek, powerful, and performs better than anything we’ve had before. Webder delivered beyond expectations.”<br>– Casey, Founder
       </div>
       <div class="testimonial">
-        "From design to deployment, everything was handled professionally and quickly."
-        <br />— Maya, Bloom Wellness
+        “From animations to backend setup, Webder gave us an enterprise-grade solution with personal attention.”<br>– Taylor, CTO
       </div>
     </div>
   </section>
 
-  <section id="faq" class="section alt">
-    <div class="container faq">
-      <h2>Frequently Asked Questions</h2>
-      <h4>How long does a website build take?</h4>
-      <p>Typical turnaround is 2–4 weeks depending on complexity.</p>
-      <h4>Do you offer hosting?</h4>
-      <p>Yes, we provide optional hosting and domain services.</p>
-      <h4>Is SEO included?</h4>
-      <p>All our sites come SEO-optimized out of the box.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container contact">
-      <h2>Contact Us</h2>
-      <p>Email us at <a href="mailto:info@webder.com">info@webder.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+  <section class="section alt" id="contact">
+    <div class="container">
+      <h2>Start Your Project</h2>
+      <p class="section-intro">We’re ready to bring your website vision to life. Let’s build something amazing together.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Tell us about your project..."></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
