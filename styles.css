@@ -1,10 +1,10 @@
-/* Webder Styles - Sleek and Professional */
+/* Webder Styles - Sleek, Accessible, Unique */
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #FFFFFF;
-  color: #333333;
+  background-color: #ECEFF1; /* Cool light gray */
+  color: #2C3E50; /* Warm medium blue */
   line-height: 1.6;
 }
 
@@ -15,10 +15,11 @@ body {
 }
 
 header {
-  background-color: #1F3A93;
+  background: linear-gradient(to right, #4B77BE, #8E44AD);
   color: #FFFFFF;
   padding: 3rem 0;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -32,36 +33,38 @@ nav a {
   text-decoration: none;
   margin: 0 1.5rem;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ECEFF1;
 }
 
 .hero {
-  background-color: #F2F2F2;
+  background-color: #DCE3EA;
   padding: 4rem 0;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 2.5rem;
+  color: #34495E; /* Slightly darker for headline */
   margin-bottom: 1rem;
 }
 
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #1F3A93;
+  background: linear-gradient(to right, #4B77BE, #8E44AD);
   color: #FFFFFF;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #4B77BE;
+  background: linear-gradient(to right, #8E44AD, #4B77BE);
 }
 
 .section {
@@ -72,6 +75,7 @@ nav a:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #34495E;
 }
 
 .section-intro {
@@ -79,7 +83,7 @@ nav a:hover {
   max-width: 600px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-  color: #666666;
+  color: #5C6F91;
 }
 
 .features {
@@ -91,14 +95,19 @@ nav a:hover {
 .feature-card {
   background-color: #FFFFFF;
   padding: 2rem;
-  border: 1px solid #E0E0E0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #CBD3DC;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
 }
 
 .alt {
-  background-color: #F2F2F2;
+  background-color: #F2F4F7;
 }
 
 .testimonial {
@@ -106,8 +115,9 @@ nav a:hover {
   padding: 1.5rem;
   margin: 1rem auto;
   max-width: 600px;
-  border-left: 5px solid #4B77BE;
+  border-left: 5px solid #8E44AD;
   font-style: italic;
+  color: #2C3E50;
 }
 
 .pricing-grid {
@@ -119,35 +129,36 @@ nav a:hover {
 
 .pricing-card {
   background-color: #FFFFFF;
-  border: 1px solid #E0E0E0;
-  border-radius: 8px;
+  border: 1px solid #CBD3DC;
+  border-radius: 10px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .pricing-card.popular {
-  border: 2px solid #1F3A93;
+  border: 2px solid #4B77BE;
 }
 
 .pricing-card h3 {
   margin-bottom: 0.5rem;
+  color: #34495E;
 }
 
 .pricing-card .price {
   font-size: 1.5rem;
-  color: #1F3A93;
+  color: #8E44AD;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .faq h4 {
   margin-top: 1.5rem;
-  color: #1F3A93;
+  color: #4B77BE;
 }
 
 .contact p a {
-  color: #1F3A93;
+  color: #8E44AD;
   text-decoration: none;
 }
 
@@ -156,7 +167,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #1F3A93;
+  background-color: #4B77BE;
   color: #FFFFFF;
   padding: 2rem 0;
   text-align: center;
